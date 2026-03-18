@@ -1,38 +1,49 @@
-
+/*
+Todas las variables del proyecto en un solo lugar para cambiar:
+Colores, tamaños o espaciados.
+*/
 :root {
-   --color-primary:        #2563eb;   
-   --color-primary-hover:  #1d4ed8;
-   --color-primary-light:  #eff6ff;
+/*Colores principales:*/
+   --color-primary:        #2563eb;   /*Botones y enlaces activos*/
+   --color-primary-hover:  #1d4ed8;   /*Al pasar el mouse*/
+   --color-primary-light:  #eff6ff;   /*Fondo del item activo del sidebar*/
 
-   --color-bg:             #f1f5f9;
-   --color-surface:        #ffffff;
-   --color-border:         #e2e8f0;
+/*Colores de fondo*/
+   --color-bg:             #f1f5f9;   /*Fondo general de la página*/
+   --color-surface:        #ffffff;   /*Fondo de sidebar, navbar y cards*/
+   --color-border:         #e2e8f0;   /*Color de líneas que dividen y bordes*/
 
-   --color-text:           #1e293b;
-   --color-text-secondary: #64748b;
-   --color-text-muted:     #94a3b8;
+/*Colores de texto*/
+   --color-text:           #1e293b;   /*Texto principal, titulos y contenido*/
+   --color-text-secondary: #64748b;   /*Texto secundario, labels y subtitulos*/
+   --color-text-muted:     #94a3b8;   /*Texto atenuado, placeholders y versión*/
 
-   --color-success:        #16a34a;
-   --color-success-bg:     #f0fdf4;
+/*Colores de estado para la tabla*/
+   --color-success:        #16a34a;   /*Aprobado*/
+   --color-success-bg:     #f0fdf4;   /*Fondo*/
 
-   --color-warning:        #d97706;
-   --color-warning-bg:     #fffbeb;
+   --color-warning:        #d97706;   /*Pendiente*/
+   --color-warning-bg:     #fffbeb;   /*Fondo*/
 
-   --color-danger:         #dc2626;
-   --color-danger-bg:      #fef2f2;
+   --color-danger:         #dc2626;   /*Rechazado*/
+   --color-danger-bg:      #fef2f2;   /*Fondo*/
 
-   --sidebar-width:        240px;
-   --navbar-height:        56px;
+/*Dimensiones del layout*/
+   --sidebar-width:        240px;  /*Ancho de la sidebar*/
+   --navbar-height:        56px;   /*Alto de la navbar*/
 
+/*Tipografía*/
    --font-base: 'Segoe UI', system-ui, -apple-system, sans-serif;
 
-   --text-xs:   0.70rem;
-   --text-sm:   0.875rem;
-   --text-md:   1rem;
-   --text-lg:   1.125rem;
-   --text-xl:   1.25rem;
+/*Escala de tamaños de texto*/
+   --text-xs:   0.70rem; /*11px - version, labels pequeños*/
+   --text-sm:   0.875rem; /*14px - texto base, items del sidebar*/
+   --text-md:   1rem; /*16px - texto normal*/
+   --text-lg:   1.125rem; /*18px - titulos de seccion*/
+   --text-xl:   1.25rem; /*20px - titulo principal de la pagina*/
 
-   --space-1:   4px;
+/*Espaciados con escala de 4px, usar siempre para padding*/
+   --space-1:   4px; 
    --space-2:   8px;
    --space-3:   12px;
    --space-4:   16px;
@@ -40,11 +51,13 @@
    --space-6:   24px;
    --space-8:   32px;
 
-   --radius-sm:  4px;
-   --radius-md:  8px;
+/*Bordes y sombras*/
+   --radius-sm:  4px; /*Bordes redondeados pequeños, badges e inputs*/
+   --radius-md:  8px; /*Bordes redondeados medianos, botones y cards*/
 
-   --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
-   --shadow-md:  0 4px 12px rgba(0,0,0,0.10);
+   --shadow-sm:  0 1px 3px rgba(0,0,0,0.08); /*Sombra pequeña para navbar y sidebar*/
+   --shadow-md:  0 4px 12px rgba(0,0,0,0.10); /*Sombra pronunciada para elementos flotantes*/
 
-   --transition: 0.2s ease;
+/*Transiciones*/
+   --transition: 0.2s ease; /*Valor estandar para hover y animaciones*/
 }

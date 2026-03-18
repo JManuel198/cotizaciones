@@ -22,11 +22,12 @@
 <!-- Navegación -->
     <nav class="sidebar__nav">
 
+<!-- Seccion comercial -->
         <div class="sidebar__section">
             <span class="sidebar__section-label">Comercial</span>
             <ul class="sidebar__list">
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link sidebar__link--active">
+                    <a href="#" class="sidebar__link" data-view="cotizacion">
                         <span class="sidebar__link-icon">◈</span>
                         <span class="sidebar__link-text">Cotización</span>
                     </a>
@@ -34,47 +35,48 @@
             </ul>
         </div>
 
+<!-- Seccion de operaciones -->
         <div class="sidebar__section">
             <span class="sidebar__section-label">Operaciones</span>
             <ul class="sidebar__list">
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="proyectos">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Proyectos</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="orden-trabajo">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Orden de trabajo</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="orden-interna">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Orden interna</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="requerimientos">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Requerimientos</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="rendiciones">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Rendiciones</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#" class="sidebar__link">
+                    <a href="#" class="sidebar__link" data-view="caja-chica">
                         <span class="sidebar__link-icon">◇</span>
                         <span class="sidebar__link-text">Caja chica</span>
                     </a>
@@ -85,6 +87,7 @@
 
     </nav>
 
+<!-- Versión del sistema -->
         <div class="sidebar__footer">
             <span class="sidebar__footer-text">v1.0.0</span>
         </div>
@@ -92,12 +95,14 @@
     </aside>
 <!--Fin Sidebar-->
 
-<!-- Contenido principal -->
+<!-- Contenido principal:
+Navbar principal y zona de contenido.
+La navbar principal nunca cambia.
+La zona de contenido es reemplazada por JS.
+-->
     <div class="main-wrapper">
 
     <header class="navbar">
-
-        <h1 class="navbar__page-title">Cotizaciones</h1>
 
         <div class="navbar__actions">
             <span class="navbar__user">Admin</span>
@@ -106,15 +111,7 @@
 
     </header>
 
-    <main class="content">
-
-        <div class="content__header">
-            <h2 class="content__title">Lista de Cotizaciones</h2>
-            <button class="btn btn--primary" disabled title="Disponible próximamente">
-                + Nueva cotización
-            </button>
-        </div>
-<!-- falta tabla de cotizaciones -->
+    <main class="content" id="content">
     </main>
 
     </div>

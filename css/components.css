@@ -1,4 +1,4 @@
-/* ============================================================
+/*
 components.css
 Estilos de componentes reutilizables en todo el sistema.
 Cada componente es independiente del layout y puede usarse
@@ -7,10 +7,9 @@ en cualquier vista sin modificaciones.
 Componentes actuales:
 - Botones (.btn)
 - Badges de estado (.badge)
-   ============================================================ */
+*/
 
-
-/* ============================================================
+/*
 BOTONES
 Sistema de botones con clase base + modificadores.
 
@@ -23,21 +22,21 @@ Ejemplos:
 <button class="btn btn--secondary">Cancelar</button>
 <button class="btn btn--primary btn--sm">Ver</button>
 <button class="btn btn--primary" disabled>No disponible</button>
-   ============================================================ */
+*/
 
 /* Estilos base compartidos por todos los botones.
    Nunca se usa solo, siempre acompañado de un modificador. */
 .btn {
-  display: inline-flex;       /* En línea pero con flexbox interno         */
-  align-items: center;        /* Centra verticalmente ícono y texto        */
-  gap: var(--space-2);        /* Espacio entre ícono y texto si los hay    */
+  display: inline-flex;       /* En línea pero con flexbox interno */
+  align-items: center;        /* Centra verticalmente ícono y texto */
+  gap: var(--space-2);        /* Espacio entre ícono y texto si los hay */
 
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-md);
 
   font-size: var(--text-sm);
   font-weight: 500;
-  white-space: nowrap;        /* El texto nunca salta de línea             */
+  white-space: nowrap; /* El texto nunca salta de línea */
 
   cursor: pointer;
   transition: background-color var(--transition),
@@ -46,7 +45,7 @@ Ejemplos:
 }
 
 /* Botón primario: fondo azul sólido.
-   Para acciones principales como "Nueva cotización". */
+Para acciones principales como "Nueva cotización". */
 .btn--primary {
   background-color: var(--color-primary);
   color: #ffffff;
@@ -57,7 +56,7 @@ Ejemplos:
 }
 
 /* Botón secundario: borde con fondo transparente.
-   Para acciones secundarias como "Cancelar" o "Ver". */
+Para acciones secundarias como "Cancelar" o "Ver". */
 .btn--secondary {
   background-color: transparent;
   color: var(--color-text);
@@ -88,7 +87,7 @@ pointer-events: none asegura que no reaccione al hover. */
 }
 
 
-/* ============================================================
+/*
 BADGES DE ESTADO
 Pastillas de color para mostrar estados en tablas.
 Se usan en la columna Estado de cada vista tipo lista.
@@ -100,14 +99,14 @@ Ejemplos:
 <span class="badge badge--success">Aprobada</span>
 <span class="badge badge--warning">Pendiente</span>
 <span class="badge badge--danger">Rechazada</span>
-   ============================================================ */
+*/
 
 /* Estilos base del badge */
 .badge {
   display: inline-flex;
   align-items: center;
   padding: 2px var(--space-2);
-  border-radius: 9999px;      /* Valor alto que produce forma de cápsula   */
+  border-radius: 9999px; /* Valor alto que produce forma de cápsula */
   font-size: var(--text-xs);
   font-weight: 600;
   white-space: nowrap;
@@ -131,22 +130,22 @@ Ejemplos:
   color: var(--color-danger);
 }
 
-/* ============================================================
-    DROPDOWN — Selector de base de datos
-    Vive en la navbar principal.
-    El menú empieza oculto y se muestra cuando JS agrega
-    la clase --open al contenedor .navbar__db-selector
-   ============================================================ */
+/*
+DROPDOWN — Selector de base de datos:
+Vive en la navbar principal.
+El menú empieza oculto y se muestra cuando JS agrega
+la clase --open al contenedor .navbar__db-selector
+*/
 
 /* Contenedor principal del dropdown.
-    position: relative es el punto de referencia para
-   que el menú se posicione justo debajo del botón. */
+position: relative es el punto de referencia para
+que el menú se posicione justo debajo del botón. */
 .navbar__db-selector {
   position: relative;
 }
 
 /* Botón que abre y cierra el dropdown.
-   Mismo tamaño que el avatar para consistencia visual. */
+Mismo tamaño que el avatar para consistencia visual. */
 .navbar__dropdown-btn {
   width: 32px;
   height: 32px;
@@ -166,10 +165,10 @@ Ejemplos:
 }
 
 /* El menú desplegable.
-    position: absolute lo saca del flujo normal y lo
-    posiciona respecto al contenedor con position: relative.
-    Empieza oculto con display: none.
-   z-index: 100 lo pone por encima de todo el contenido. */
+position: absolute lo saca del flujo normal y lo
+posiciona respecto al contenedor con position: relative.
+Empieza oculto con display: none.
+z-index: 100 lo pone por encima de todo el contenido. */
 .navbar__dropdown-menu {
   display: none;
   position: absolute;
@@ -186,7 +185,7 @@ Ejemplos:
 
 /* Cuando el contenedor tiene la clase --open,
 el menú se hace visible.
-   JS agrega y quita esta clase al hacer clic en el botón. */
+JS agrega y quita esta clase al hacer clic en el botón. */
 .navbar__db-selector--open .navbar__dropdown-menu {
   display: block;
 }

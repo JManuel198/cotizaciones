@@ -131,10 +131,35 @@ La zona de contenido es reemplazada por JS.
     </header>
 
     <main class="content" id="content">
-        <div class="form-group">
-            <label class="form-label" for="nombre">Nombre</label>
-            <input class="form-input" type="text" id="nombre" placeholder="Ingrese el nombre" />
-        </div>
+        <form id="form-cotizacion">
+            <div class="form-group">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-input" type="text" id="nombre" 
+                placeholder="Ingrese el nombre"/>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-input" type="text" id="telefono" 
+                placeholder="Ingrese el teléfono"/>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="direccion">Dirección</label>
+                <input class="form-input" type="text" id="direccion" 
+                placeholder="Ingrese la dirección"/>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="fecha">Fecha</label>
+                <input class="form-input" type="date" id="fecha" 
+                placeholder="Ingrese la fecha"/>
+            </div>
+
+            <button class="btn btn--primary" type="submit">
+                Guardar
+            </button>
+        </form>
     </main>
 
     </div>

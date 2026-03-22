@@ -1,0 +1,8 @@
+# Archivos compilados de python
+__pycache__/
+*.pyc
+
+# Base de datos y archivos (proximamente)
+
+# Entorno virtual
+venv/

@@ -77,19 +77,24 @@ function mostrarFormulario() {
         <div class="form-contacto__col">
             <div class="form-group">
                 <label class="form-label" for="nombre">Nombre</label>
-                <input class="form-input" type="text" id="nombre"/>
+                <input class="form-input" type="text" id="nombre"
+                placeholder="Ingresa el nombre del contacto"/>
             </div>
             <div class="form-group">
                 <label class="form-label" for="apellidos">Apellidos</label>
-                <input class="form-input" type="text" id="apellidos"/>
+                <input class="form-input" type="text" id="apellidos"
+                placeholder="Ingresa los apellidos del contacto"/>
             </div>
+            <!-- Cargo y empresa deben ser campos de búsqueda para seleccion -->
             <div class="form-group">
                 <label class="form-label" for="cargo">Cargo</label>
-                <input class="form-input" type="text" id="cargo"/>
+                <input class="form-input" type="text" id="cargo"
+                placeholder="Ingresa el cargo del contacto"/>
             </div>
             <div class="form-group">
                 <label class="form-label" for="empresa">Empresa</label>
-                <input class="form-input" type="text" id="empresa"/>
+                <input class="form-input" type="text" id="empresa"
+                placeholder="Ingresa la empresa del contacto"/>
             </div>
         </div>
 
@@ -98,19 +103,23 @@ function mostrarFormulario() {
         <div class="form-contacto__col">
             <div class="form-group">
                 <label class="form-label" for="tel-personal">Teléfono personal</label>
-                <input class="form-input" type="text" id="tel-personal"/>
+                <input class="form-input" type="text" id="tel-personal"
+                placeholder="Ingresa el número personal del contacto"/>
             </div>
             <div class="form-group">
                 <label class="form-label" for="tel-trabajo">Teléfono de trabajo</label>
-                <input class="form-input" type="text" id="tel-trabajo"/>
+                <input class="form-input" type="text" id="tel-trabajo"
+                placeholder="Ingresa el número de Trabajo del contacto"/>
             </div>
             <div class="form-group">
                 <label class="form-label" for="correo-personal">Correo personal</label>
-                <input class="form-input" type="email" id="correo-personal"/>
+                <input class="form-input" type="email" id="correo-personal"
+                placeholder="Ingresa el correo personal del contacto"/>
             </div>
             <div class="form-group">
                 <label class="form-label" for="correo-trabajo">Correo de trabajo</label>
-                <input class="form-input" type="email" id="correo-trabajo"/>
+                <input class="form-input" type="email" id="correo-trabajo"
+                placeholder="Ingresa el correo de Trabajo del contacto"/>
             </div>
         </div>
 

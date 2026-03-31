@@ -73,30 +73,7 @@ function mostrarFormulario() {
     <form id="form-contacto" class="form-contacto">
 
         <!-- Columna izquierda -->
-        <div class="form-contacto__col">
-            <div class="form-group">
-                <label class="form-label" for="tel-personal">Teléfono personal</label>
-                <input class="form-input" type="text" id="tel-personal"
-                    placeholder="+56 9 1234 5678" />
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="tel-trabajo">Teléfono de trabajo</label>
-                <input class="form-input" type="text" id="tel-trabajo"
-                    placeholder="+56 9 8765 4321" />
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="correo-personal">Correo personal</label>
-                <input class="form-input" type="email" id="correo-personal"
-                    placeholder="correo@personal.com" />
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="correo-trabajo">Correo de trabajo</label>
-                <input class="form-input" type="email" id="correo-trabajo"
-                    placeholder="correo@empresa.com" />
-            </div>
-        </div>
 
-        <!-- Columna derecha -->
         <div class="form-contacto__col">
             <div class="form-group">
                 <label class="form-label" for="nombre">Nombre</label>
@@ -117,6 +94,31 @@ function mostrarFormulario() {
                 <label class="form-label" for="empresa">Empresa</label>
                 <input class="form-input" type="text" id="empresa"
                         placeholder="Nombre de la empresa" />
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+
+        <div class="form-contacto__col">
+            <div class="form-group">
+                <label class="form-label" for="tel-personal">Teléfono personal</label>
+                <input class="form-input" type="text" id="tel-personal"
+                    placeholder="+56 9 1234 5678" />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="tel-trabajo">Teléfono de trabajo</label>
+                <input class="form-input" type="text" id="tel-trabajo"
+                    placeholder="+56 9 8765 4321" />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="correo-personal">Correo personal</label>
+                <input class="form-input" type="email" id="correo-personal"
+                    placeholder="correo@personal.com" />
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="correo-trabajo">Correo de trabajo</label>
+                <input class="form-input" type="email" id="correo-trabajo"
+                    placeholder="correo@empresa.com" />
             </div>
         </div>
 

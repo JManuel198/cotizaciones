@@ -13,7 +13,7 @@ Estilos específicos de la sección Contactos.
 }
 
 .view-header__title {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     font-weight: 600;
     color: var(--color-text);
 }
@@ -47,12 +47,16 @@ Estilos específicos de la sección Contactos.
 
 .view-subheader__search {
     flex: 1;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: var(--space-1);
 }
 
 .view-subheader__pagination {
     display: flex;
     align-items: center;
     gap: var(--space-2);
+    margin-left: auto;
 }
 
 .view-subheader__page {
@@ -75,6 +79,7 @@ Estilos específicos de la sección Contactos.
 
 .table thead {
     background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
 }
 
 .table th {
@@ -120,7 +125,8 @@ Estilos específicos de la sección Contactos.
     grid-template-columns: 1fr 1fr;
     gap: var(--space-6);
     padding: var(--space-6) var(--space-5);
-    max-width: 860px;
+    max-width: 100%;
+    background-color: var(--color-surface);
 }
 
 .form-contacto__col {

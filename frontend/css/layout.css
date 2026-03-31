@@ -89,6 +89,7 @@ de cada grupo de items*/
 
 .sidebar__item {
   width: 100%;
+  font-size: var(--text-sm);
 }
 
 /*Enlace de cada item: icono + texto alineados horizontalmente*/

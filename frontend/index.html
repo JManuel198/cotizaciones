@@ -136,7 +136,9 @@ La zona de contenido es reemplazada por JS.
         </main>
 
     </div>
-    <script src="js/dropdown.js"></script>
-    <script src="js/views/contactos.js"></script>
+<!-- El orden importa: router primero, luego las vistas, luego dropdown -->
+<script src="js/router.js"></script>
+<script src="js/views/contactos.js"></script>
+<script src="js/dropdown.js"></script>
 </body>
 </html>

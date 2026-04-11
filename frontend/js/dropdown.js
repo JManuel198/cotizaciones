@@ -31,8 +31,36 @@ document.querySelectorAll('.navbar__dropdown-menu a')
 
       const vista = enlace.textContent.trim()
 
+      if (vista === 'Clientes') {
+        navegar('/general/DataBase/List/Customer')
+      }
+
       if (vista === 'Contactos') {
         navegar('/general/DataBase/List/Contacts')
+      }
+
+      if (vista === 'Servicios') {
+        navegar('/general/DataBase/List/Services')
+      }
+
+      if (vista === 'EPPs') {
+        navegar('/general/DataBase/List/Epps')
+      }
+
+      if (vista === 'Personal') {
+        navegar('/general/DataBase/List/Staff')
+      }
+
+      if (vista === 'Materiales') {
+        navegar('/general/DataBase/List/Materials')
+      }
+
+      if (vista === 'Herramientas') {
+        navegar('/general/DataBase/List/Tools')
+      }
+
+      if (vista === 'Ofertas') {
+        navegar('/general/DataBase/List/Offers')
       }
 
     })

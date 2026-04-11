@@ -174,7 +174,9 @@
     grid-column: 1 / -1;
 }
 
-.form-layout-top-2col__col {
+
+/* form-col sirve para ambos layouts */
+.form-col {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
